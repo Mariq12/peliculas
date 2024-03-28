@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://img.freepik.com/foto-gratis/collage-fondo-pelicula_23-2149876014.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+/* Estilos para el formulario */
+.container_form {
+  margin-top: 120px;
+  padding: 20px;
+  background-color: rgba(242, 242, 242, 0.2); /* Cambiar el valor de opacidad según sea necesario */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: auto; /* Centrar el formulario */
+  margin-bottom: 30px;
+}
+
+.container_form h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.container_form input[type="text"],
+.container_form input[type="number"] {
+  width: calc(100% - 22px); /* Ancho del 100% menos el padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgba(242, 242, 242, 0.9);
+}
+
+.container_form button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container_form button:hover {
+  background-color: #45a049;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 170px;
+}
+
+.alura-latam-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.imagen {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.container_allMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+moviesListContainer {
+	padding: 2%;
+  display: block;
+  max-width: 30%;
+}
+
+.container_movies {
+  padding: 2%;
+  display: block;
+  max-width: 30%;
+}
+
+img {
+  max-height: 250px;
+  width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+p {
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #0c0979, #4e0283, #7304b3);
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  margin-left: 0; /* Eliminar el margen izquierdo */
+  padding-left: 0; /* Eliminar el relleno izquierdo */
+}
+
+footer p {
+  background: black;
+  margin: 0;
+  padding: 20px 0;
+  background-color: black;
+  color: #fff;
+  height: 60px;
+}
