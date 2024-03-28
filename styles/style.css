@@ -28,11 +28,18 @@ body {
   margin-top: 120px;
   padding: 20px;
   background-color: rgba(242, 242, 242, 0.2); /* Cambiar el valor de opacidad según sea necesario */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 50px;
+  /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/ /* Añadir sombra más pronunciada */
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); /* Ajustar la sombra a un tono de blanco */
   max-width: 400px; /* Ancho máximo del formulario */
   margin: auto; /* Centrar el formulario */
   margin-bottom: 30px;
+  transform: translateY(0); /* Agregar transición para efecto 3D */
+  transition: transform 0.3s ease;
+}
+
+.container_form:hover {
+  transform: translateY(-5px); /* Levantar el formulario al pasar el cursor */
 }
 
 .container_form h2 {
@@ -52,17 +59,18 @@ body {
 }
 
 .container_form button {
-  width: 100%;
-  background-color: #4caf50;
+  width: 50%;
+  background-image: linear-gradient(to bottom, #0c0979, #6906b1, #8700d5, #b83dff);
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .container_form button:hover {
-  background-color: #45a049;
+  background-image: linear-gradient(to bottom, #b83dff, #7304b3, #4e0283, #0c0979);
 }
 
 .page-subtitle {
@@ -90,12 +98,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-moviesListContainer {
-	padding: 2%;
-  display: block;
-  max-width: 30%;
 }
 
 .container_movies {
